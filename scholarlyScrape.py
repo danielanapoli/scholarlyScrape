@@ -7,8 +7,9 @@ import time
 # set up VPN
 initialize_VPN(save=1, area_input=['complete rotation'])
 
-# scrape scholar
 print(f'Scraping search queries...')
+
+# rotate ip when needed
 for i in range(3):
     rotate_VPN()
     # query google scholar

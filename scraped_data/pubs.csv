@@ -1,11 +1,59 @@
 Tag,Author,Year,Title,URL,Excerpt
-2013_DAkhawe_Alicein,"['D Akhawe', 'AP Felt']",2013,Alice in warningland: A large-scale field study of browser security warning effectiveness,https://www.usenix.org/conference/usenixsecurity13/technical-sessions/presentation/akhawe,N/A
-2020_SBock_Nudgingt,"['S Bock', 'N Momen']",2020,Nudging the User with Privacy Indicator: A Study on the App Selection Behavior of the User,https://dl.acm.org/doi/abs/10.1145/3419249.3420111,N/A
-2015_MFagan_Howdoes,"['M Fagan', 'MMH Khan']",2015,How does this message make you feel? A study of user perspectives on software update/warning message design,https://hcis-journal.springeropen.com/articles/10.1186/s13673-015-0053-y,N/A
-2012_MRudolph_Acritica,"['M Rudolph', 'R Schwarz']",2012,A critical survey of security indicator approaches,https://ieeexplore.ieee.org/abstract/document/6329197/,N/A
-2009_JSunshine_CryingWo,"['J Sunshine', 'S Egelman', 'H Almuhimedi']",2009,Crying Wolf: An Empirical Study of SSL Warning Effectiveness.,https://static.usenix.org/events/sec09/tech/full_papers/sec09_browser.pdf,N/A
-2010_YFujihara_Ausersu,"['Y Fujihara', 'Y Murayama']",2010,A user survey on the interface causing discomfort for warning,https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.1039.5112&rep=rep1&type=pdf,N/A
-2020_YLiang_Financial,"['Y Liang', 'D Quan', 'F Wang', 'X Jia', 'M Li', 'T Li']",2020,Financial big data analysis and early warning platform: a case study,https://ieeexplore.ieee.org/abstract/document/8967014/,N/A
-2008_SEgelman_You'vebe,"['S Egelman', 'LF Cranor', 'J Hong']",2008,You've been warned: an empirical study of the effectiveness of web browser phishing warnings,https://dl.acm.org/doi/abs/10.1145/1357054.1357219,N/A
-2012_APFelt_Androidp,"['AP Felt', 'E Ha', 'S Egelman', 'A Haney', 'E Chin']",2012,"Android permissions: User attention, comprehension, and behavior",https://dl.acm.org/doi/abs/10.1145/2335356.2335360,N/A
+2015_ZFZaaba_Examinati,"['ZF Zaaba', 'TK Boon']",2015,Examination on usability issues of security warning dialogs,http://www.jmest.org/wp-content/uploads/JMESTN42350779.pdf,N/A
+2019_FNAAhmad_Empirical,"['FNA Ahmad', 'ZF Zaaba', 'MAIM Aminuddin']",2019,Empirical Investigations on Usability of Security Warning Dialogs: End Users Experience,https://link.springer.com/chapter/10.1007/978-981-15-2693-0_24,N/A
+2008_RDhamija_Theseven,"['R Dhamija', 'L Dusseault']",2008,The seven flaws of identity management: Usability and security challenges,https://ieeexplore.ieee.org/abstract/document/4489846/,N/A
+2019_CLXYi_Appraisal,"['CLX Yi', 'ZF Zaaba', 'MAIM Aminuddin']",2019,Appraisal on User's Comprehension in Security Warning Dialogs: Browsers Usability Perspective,https://link.springer.com/chapter/10.1007/978-981-15-2693-0_23,N/A
+2013_THughes-Roberts_Privacya,['T Hughes-Roberts'],2013,Privacy and social networks: Is concern a valid indicator of intention and behaviour?,https://ieeexplore.ieee.org/abstract/document/6693437/,N/A
+2014_MNMejri_Surveyon,"['MN Mejri', 'J Ben-Othman', 'M Hamdi']",2014,Survey on VANET security challenges and possible cryptographic solutions,https://www.sciencedirect.com/science/article/pii/S2214209614000187,N/A
+2012_MSAl-Kahtani_Surveyon,['MS Al-Kahtani'],2012,Survey on security attacks in vehicular ad hoc networks (VANETs),https://ieeexplore.ieee.org/abstract/document/6507953/,N/A
+2006_RDingledine_Anonymity,"['R Dingledine', 'N Mathewson']",2006,Anonymity Loves Company: Usability and the Network Effect.,https://hostmaster.freehaven.net/anonbib/cache/oreilly-usability.pdf,N/A
+2008_HHartenstein_Atutoria,"['H Hartenstein', 'LP Laberteaux']",2008,A tutorial survey on vehicular ad hoc networks,https://ieeexplore.ieee.org/abstract/document/4539481/,N/A
+2017_AGharaibeh_Smartcit,"['A Gharaibeh', 'MA Salahuddin']",2017,"Smart cities: A survey on data management, security, and enabling technologies",https://ieeexplore.ieee.org/abstract/document/8003273/,N/A
+2013_YWang_Privacyn,"['Y Wang', 'PG Leon', 'K Scott', 'X Chen', 'A Acquisti']",2013,Privacy nudges for social media: an exploratory Facebook study,https://dl.acm.org/doi/abs/10.1145/2487788.2488038,N/A
+2019_HTupsamudre_Forcevs.,"['H Tupsamudre', 'S Vaddepalli', 'V Banahatti']",2019,Force vs. Nudge: Comparing Users' Pattern Choices on SysPal and TinPal,https://dl.acm.org/doi/abs/10.1145/3319535.3363250,N/A
 2009_JKrumm_Asurvey,['J Krumm'],2009,A survey of computational location privacy,https://link.springer.com/content/pdf/10.1007/s00779-008-0212-5.pdf,N/A
+2018_RRoman_Mobileed,"['R Roman', 'J Lopez', 'M Mambo']",2018,"Mobile edge computing, fog et al.: A survey and analysis of security threats and challenges",https://www.sciencedirect.com/science/article/pii/S0167739X16305635,N/A
+2006_SMFurnell_Thechall,"['SM Furnell', 'A Jusoh', 'D Katsabas']",2006,The challenges of understanding and using security: A survey of end-users,https://www.sciencedirect.com/science/article/pii/S0167404805002038,N/A
+2017_NFSamsudin_Security,"['NF Samsudin', 'ZF Zaaba']",2017,Security warning life cycle: challenges and panacea,https://journal.utem.edu.my/index.php/jtec/article/view/2393,N/A
+2014_AMukherjee_Principle,"['A Mukherjee', 'SAA Fakoorian', 'J Huang']",2014,Principles of physical layer security in multiuser wireless networks: A survey,https://ieeexplore.ieee.org/abstract/document/6739367/,N/A
+2010_TKavitha_Security,"['T Kavitha', 'D Sridharan']",2010,Security vulnerabilities in wireless sensor networks: A survey,https://www.researchgate.net/profile/D_Sridharan/publication/266591710_Security_Vulnerabilities_In_Wireless_Sensor_Networks_A_Survey/links/544629e30cf2f14fb80f26ce/Security-Vulnerabilities-In-Wireless-Sensor-Networks-A-Survey.pdf,N/A
+2007_SESchechter_Theemper,"['SE Schechter', 'R Dhamija', 'A Ozment']",2007,The emperor's new security indicators,https://ieeexplore.ieee.org/abstract/document/4223213/,N/A
+2018_JMHamamreh_Classific,"['JM Hamamreh', 'HM Furqan']",2018,Classifications and applications of physical layer security techniques for confidentiality: A comprehensive survey,https://ieeexplore.ieee.org/abstract/document/8509094/,N/A
+2014_PFaruki_Androids,"['P Faruki', 'A Bharmal', 'V Laxmi']",2014,"Android security: a survey of issues, malware penetration, and defenses",https://ieeexplore.ieee.org/abstract/document/6999911/,N/A
+2014_LDaXu_Internet,"['L Da Xu', 'W He', 'S Li']",2014,Internet of things in industries: A survey,https://ieeexplore.ieee.org/abstract/document/6714496/,N/A
+2015_SYi_Asurvey,"['S Yi', 'C Li', 'Q Li']",2015,"A survey of fog computing: concepts, applications and issues",https://dl.acm.org/doi/abs/10.1145/2757384.2757397,N/A
+2018_KGai_Asurvey,"['K Gai', 'M Qiu', 'X Sun']",2018,A survey on FinTech,https://www.sciencedirect.com/science/article/pii/S1084804517303247,N/A
+2015_IAhmad_Security,"['I Ahmad', 'S Namal', 'M Ylianttila']",2015,Security in software defined networks: A survey,https://ieeexplore.ieee.org/abstract/document/7226783/,N/A
+2004_JLuo_Asurvey,"['J Luo', 'JP Hubaux']",2004,A survey of inter-vehicle communication,https://infoscience.epfl.ch/record/28039,N/A
+2006_CFlavián_Consumer,"['C Flavián', 'M Guinalíu']",2006,"Consumer trust, perceived security and privacy policy",https://www.emerald.com/insight/content/doi/10.1108/02635570610666403/full/html,N/A
+2011_ZMFadlullah_Anearly,"['ZM Fadlullah', 'MM Fouda', 'N Kato', 'X Shen']",2011,An early warning system against malicious activities for smart grid communications,https://ieeexplore.ieee.org/abstract/document/6033036/,N/A
+2012_AGFragkiadakis_Asurvey,"['AG Fragkiadakis', 'EZ Tragos']",2012,A survey on security threats and detection techniques in cognitive radio networks,https://ieeexplore.ieee.org/abstract/document/6129369/,N/A
+2015_WKnowles_Asurvey,"['W Knowles', 'D Prince', 'D Hutchison', 'JFP Disso']",2015,A survey of cyber security management in industrial control systems,https://www.sciencedirect.com/science/article/pii/S1874548215000207,N/A
+2015_BMokhtar_Surveyon,"['B Mokhtar', 'M Azab']",2015,Survey on security issues in vehicular ad hoc networks,https://www.sciencedirect.com/science/article/pii/S1110016815001246,N/A
+2007_BWu_Asurvey,"['B Wu', 'J Chen', 'J Wu', 'M Cardei']",2007,A survey of attacks and countermeasures in mobile ad hoc networks,https://link.springer.com/chapter/10.1007/978-0-387-33112-6_5,N/A
+2016_DYYu_Exploring,"['DY Yu', 'E Stobert', 'D Basin', 'S Capkun']",2016,Exploring website location as a security indicator,https://arxiv.org/abs/1610.03647,N/A
+2013_RRoman_Onthefe,"['R Roman', 'J Zhou', 'J Lopez']",2013,On the features and challenges of security and privacy in distributed internet of things,https://www.sciencedirect.com/science/article/pii/S1389128613000054,N/A
+2003_NSGood_Usability,"['NS Good', 'A Krekelberg']",2003,Usability and privacy: a study of Kazaa P2P file-sharing,https://dl.acm.org/doi/abs/10.1145/642611.642636,N/A
+2013_GAceto_Cloudmon,"['G Aceto', 'A Botta', 'W De Donato', 'A Pescapè']",2013,Cloud monitoring: A survey,https://www.sciencedirect.com/science/article/pii/S1389128613001084,N/A
+2004_JPHubaux_Thesecur,"['JP Hubaux', 'S Capkun', 'J Luo']",2004,The security and privacy of smart vehicles,https://ieeexplore.ieee.org/abstract/document/1306972/,N/A
+2015_SKriaa_Asurvey,"['S Kriaa', 'L Pietre-Cambacedes', 'M Bouissou']",2015,A survey of approaches combining safety and security for industrial control systems,https://www.sciencedirect.com/science/article/pii/S0951832015000538,N/A
+2015_KCoomber_Doconsum,"['K Coomber', 'F Martino', 'IR Barbour']",2015,Do consumers 'Get the facts'? A survey of alcohol warning label recognition in Australia,https://bmcpublichealth.biomedcentral.com/articles/10.1186/s12889-015-2160-0,N/A
+2015_FQu_Asecurit,"['F Qu', 'Z Wu', 'FY Wang', 'W Cho']",2015,A security and privacy review of VANETs,https://ieeexplore.ieee.org/abstract/document/7127003/,N/A
+2004_SBellman_Internati,"['S Bellman', 'EJ Johnson', 'SJ Kobrin']",2004,International differences in information privacy concerns: A global survey of consumers,https://www.tandfonline.com/doi/abs/10.1080/01972240490507956,N/A
+2015_AWhitmore_TheInter,"['A Whitmore', 'A Agarwal', 'L Da Xu']",2015,The Internet of Things—A survey of topics and trends,https://link.springer.com/content/pdf/10.1007/s10796-014-9489-2.pdf,N/A
+2008_MBSalem_Asurvey,"['MB Salem', 'S Hershkop', 'SJ Stolfo']",2008,A survey of insider attack detection research,https://link.springer.com/chapter/10.1007/978-0-387-77322-3_5,N/A
+2012_AAttar_Asurvey,"['A Attar', 'H Tang', 'AV Vasilakos', 'FR Yu']",2012,A survey of security challenges in cognitive radio networks: Solutions and future research directions,https://ieeexplore.ieee.org/abstract/document/6290334/,N/A
+2009_ABuchenscheit_AVANET-b,"['A Buchenscheit', 'F Schaub', 'F Kargl']",2009,A VANET-based emergency vehicle warning system,https://ieeexplore.ieee.org/abstract/document/5416384/,N/A
+2000_CAWoodward_Patients,"['CA Woodward', 'T Ostbye', 'J Craighead']",2000,Patient satisfaction as an indicator of quality care in independent health facilities: developing and assessing a tool to enhance public accountability,https://journals.sagepub.com/doi/abs/10.1177/106286060001500303,N/A
+2017_EZeng_Enduser,"['E Zeng', 'S Mare', 'F Roesner']",2017,End user security and privacy concerns with smart homes,https://www.usenix.org/conference/soups2017/technical-sessions/presentation/zeng,N/A
+2003_SAWeis_Security,['SA Weis'],2003,Security and privacy in radio-frequency identification devices,https://dspace.mit.edu/bitstream/handle/1721.1/87860/53245923-MIT.pdf?sequence=2,N/A
+2013_JLFernández-Alemán_Security,"['JL Fernández-Alemán', 'IC Señor', 'PÁO Lozoya']",2013,Security and privacy in electronic health records: A systematic literature review,https://www.sciencedirect.com/science/article/pii/S1532046412001864,N/A
+2015_RSPortnoff_Somebody',"['RS Portnoff', 'LN Lee', 'S Egelman', 'P Mishra']",2015,Somebody's watching me? assessing the effectiveness of webcam indicator lights,https://dl.acm.org/doi/abs/10.1145/2702123.2702164,N/A
+2013_OSaid_Towardsi,"['O Said', 'M Masud']",2013,Towards internet of things: Survey and future vision,https://cs.brown.edu/courses/cs227/archives/2017/papers/Towards_Internet_of_Things_Survey_and_Fu.pdf,N/A
+2013_JMartchamadol_Anaggreg,"['J Martchamadol', 'S Kumar']",2013,An aggregated energy security performance indicator,https://www.sciencedirect.com/science/article/pii/S0306261912007337,N/A
+2008_SEgelman_You'vebe,"['S Egelman', 'LF Cranor', 'J Hong']",2008,You've been warned: an empirical study of the effectiveness of web browser phishing warnings,https://dl.acm.org/doi/abs/10.1145/1357054.1357219,N/A
+2016_AHNgu_IoTmiddl,"['AH Ngu', 'M Gutierrez', 'V Metsis', 'S Nepal']",2016,IoT middleware: A survey on issues and enabling technologies,https://ieeexplore.ieee.org/abstract/document/7582463/,N/A
+2012_APFelt_Androidp,"['AP Felt', 'E Ha', 'S Egelman', 'A Haney', 'E Chin']",2012,"Android permissions: User attention, comprehension, and behavior",https://dl.acm.org/doi/abs/10.1145/2335356.2335360,N/A
+2008_MLSichitiu_Inter-veh,"['ML Sichitiu', 'M Kihl']",2008,Inter-vehicle communication systems: a survey,https://ieeexplore.ieee.org/abstract/document/4564481/,N/A
+2011_APFelt_Asurvey,"['AP Felt', 'M Finifter', 'E Chin', 'S Hanna']",2011,A survey of mobile malware in the wild,https://dl.acm.org/doi/abs/10.1145/2046614.2046618,N/A
+2017_ASenarath_Security,"['A Senarath', 'NAG Arachchilage', 'BB Gupta']",2017,Security strength indicator in fallback authentication: Nudging users for better answers in secret questions,https://arxiv.org/abs/1701.03229,N/A
