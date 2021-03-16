@@ -1,4 +1,3 @@
-import time
 import csv
 import os
 import PyPDF2
@@ -12,18 +11,16 @@ def genTag(authors, year, title):
     return(year + '_' + authors[0].replace(' ', '') + '_' + title[0:9].replace(' ', '')) 
 
 # create a .csv file containing selected data from google scholar queries 
-#TODO: after setting up proxy, adjust counter limitation from while loop
 def saveQuery(search_query, file):
     n = 0
     pub = (next(search_query))
     with open(file, 'w') as pubsFile:
         w = csv.writer(pubsFile)
         w.writerow(["Tag", "Author", "Year", "Title", "URL", "Excerpt"])
-        while(next(search_query) and n < 3):
+        while(next(search_query)):
             n += 1
             w.writerow([genTag(pub["bib"]["author"], pub["bib"]["pub_year"], pub["bib"]["title"]), 
                         pub["bib"]["author"], pub["bib"]["pub_year"], pub["bib"]["title"], pub["pub_url"], 'N/A'])
-            time.sleep(1)
             pub = (next(search_query))
         print(f'Saved data from {n} scraped publications on Google scholar.')
     pubsFile.close()
