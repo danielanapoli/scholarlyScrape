@@ -2,11 +2,15 @@ from scholarly import scholarly, ProxyGenerator
 from methods import *
 from constants import *
 
-# get proxy going
-#TODO: sub out Luminati proxy for other VPN service
-pg = ProxyGenerator()
-pg.Luminati(usr=os.getenv("USERNAME"), passwd=os.getenv("PASSWORD"), proxy_port=os.getenv("PORT"))
-scholarly.use_proxy(pg)
+# Luminati
+#pg = ProxyGenerator()
+#pg.Luminati(usr=os.getenv("USERNAME"), passwd=os.getenv("PASSWORD"), proxy_port=os.getenv("PORT"))
+#scholarly.use_proxy(pg)
+
+# FreeProxies
+pg2 = ProxyGenerator()
+pg2.FreeProxies()
+scholarly.use_proxy(pg2)
 
 # query google scholar
 search_query = scholarly.search_pubs(SEARCH_QUERY, patents=False, citations=False, year_low=2000, year_high=2021)

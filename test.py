@@ -1,6 +1,16 @@
+#index = pubs.index[pubs['Tag']=='2000_UJendricke_Usability']
+#print(pubs.loc[index])
+ 
 import pandas
 
-df2 = pandas.DataFrame
 pubs = pandas.read_csv('scraped_data\pubs.csv')
-print(pubs.to_dict())
+tag = '2000_UJendricke_Usability'
+excerpt = 'Hello there!'
+
+
+
+
+print(pubs)
+
+
 

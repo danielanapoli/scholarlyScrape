@@ -18,12 +18,12 @@ def saveQuery(search_query, file):
     pub = (next(search_query))
     with open(file, 'w') as pubsFile:
         w = csv.writer(pubsFile)
-        w.writerow(["Tag", "Author", "Year", "Title", "URL"])
+        w.writerow(["Tag", "Author", "Year", "Title", "URL", "Excerpt"])
         while(next(search_query) and n < 3):
             n += 1
             w.writerow([genTag(pub["bib"]["author"], pub["bib"]["pub_year"], pub["bib"]["title"]), 
-                        pub["bib"]["author"], pub["bib"]["pub_year"], pub["bib"]["title"], pub["pub_url"]])
-            time.sleep(2)
+                        pub["bib"]["author"], pub["bib"]["pub_year"], pub["bib"]["title"], pub["pub_url"], 'N/A'])
+            time.sleep(1)
             pub = (next(search_query))
         print(f'Saved data from {n} scraped publications on Google scholar.')
     pubsFile.close()
@@ -34,7 +34,7 @@ def handlePDF(file):
     pubs = pandas.read_csv(file)
     for tag in pubs.Tag:
         n += extractPDFData(tag)
-    print(f'Extracted data from {n} PDFs.')
+    print(f'Extracted and appended data from {n} PDFs.')
 
 # extract first page (or first 4000 chars) from a PDF file        
 def extractPDFData(file):
@@ -54,10 +54,6 @@ def extractPDFData(file):
 # append extracted data to corresponding publication rows based on tag; overwrite .csv file with updated dataframe 
 def updatePubs(excerpt, tag):
     pubs = pandas.read_csv(PUBS_FILE)
-    print(pubs.to_dict())
-    
-
-
-
-
-    #pubs.to_csv(PUBS_FILE, index=False)
+    pubs = pubs.set_index('Tag')
+    pubs.at[tag, 'Excerpt'] = excerpt
+    pubs.to_csv(PUBS_FILE, index=False)
