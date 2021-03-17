@@ -1,5 +1,5 @@
 *.log
 *.txt
 ignore/
-scraped_data/
-pdf_data/
+scraped_data/*.csv
+pdf_data/*.pdf
