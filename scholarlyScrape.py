@@ -8,7 +8,7 @@ from nordvpn_switcher import initialize_VPN, rotate_VPN, terminate_VPN
 # set up VPN
 initialize_VPN(save=1, area_input=['complete rotation'])
 
-print(f'Scraping search queries...')
+print('Scraping search queries...')
 
 # rotate ip when needed
 for i in range(3):
@@ -23,9 +23,9 @@ terminate_VPN(instructions=None)
 
 # scrape downloaded articles
 if (ARTICLE_SCRAPE):
-    print(f'Scraping corresponding article data...')
+    print('Scraping corresponding article data...')
     handlePDF(PUBS_FILE)
 else:
-    print(f'Article scraping not enabled.')
+    print('Article scraping not enabled.')
 
 print(f'Process completed. See {PUBS_FILE} for results.')

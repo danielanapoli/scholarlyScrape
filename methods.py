@@ -1,3 +1,4 @@
+import sys
 import csv
 import os
 import PyPDF2
@@ -33,7 +34,8 @@ def handlePDF(file):
         n += extractData(tag)
     print(f'Extracted and appended data from {n} PDFs.')
 
-# extract first page (or first 4000 chars) from a PDF file        
+# extract first page (or first 4000 chars) from a PDF file   
+# NOTE: file must exist, no error handling implemented      
 def extractData(file):
     pageNum = 0
     pdfObj = open(DIR_PATH + '/' + file + '.pdf', 'rb')
