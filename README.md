@@ -1,11 +1,10 @@
 # scholarlyScrape
-
-NOTE: Before running, create an empty `\scraped_data` and `\pdf_data` directory in the same directory as scholarlyScrape.py.
-
 TO RUN:
 
-`python .\scholarlyScrape.py`
+1. Collect publication data: `python .\scholarlyScrape.py`
 
-...after PDF files are downloaded and identified correctly
+2. Download PDF files. Be sure to name files with corresponding Tags. [Done manually]
 
-`python .\pdfScrape.py`
+3. Collect PDF excerpts: `python .\pdfScrape.py`
+
+*Note: Before running, create an empty `\scraped_data` and `\pdf_data` directory in the same directory as scholarlyScrape.py.*
