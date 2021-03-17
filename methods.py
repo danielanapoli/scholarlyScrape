@@ -17,11 +17,13 @@ def saveQuery(search_query, file):
     pub = (next(search_query))
     with open(file, 'w', encoding='utf-8') as pubsFile:
         w = csv.writer(pubsFile)
-        w.writerow(["Tag", "Author", "Year", "Title", "URL", "Excerpt"])
+        w.writerow(["Tag", "Author", "Year", "Title", "Venue", "URL", "GS_Rank", "Citations", "Excerpt"])
         while(next(search_query)):
             n += 1
-            w.writerow([genTag(pub["bib"]["author"], pub["bib"]["pub_year"], pub["bib"]["title"]), 
-                        pub["bib"]["author"], pub["bib"]["pub_year"], pub["bib"]["title"], pub["pub_url"], 'N/A'])
+            w.writerow([genTag(pub["bib"]["author"], pub["bib"]["pub_year"], pub["bib"]["title"]), #Output from genTag()
+                        pub["bib"]["author"], pub["bib"]["pub_year"], pub["bib"]["title"], pub["bib"]["venue"], #Data in bib object
+                        pub["pub_url"], pub["gsrank"], pub["num_citations"], #Data not in bib object
+                        'N/A']) #Placeholder for excerpt that will be populated after running PDFscrape.py
             pub = (next(search_query))
         print(f'Saved data from {n} scraped publications on Google scholar.')
     pubsFile.close()
