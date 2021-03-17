@@ -21,11 +21,3 @@ for i in range(3):
 # disconnect from VPN
 terminate_VPN(instructions=None)
 
-# scrape downloaded articles
-if (ARTICLE_SCRAPE):
-    print('Scraping corresponding article data...')
-    handlePDF(PUBS_FILE)
-else:
-    print('Article scraping not enabled.')
-
-print(f'Process completed. See {PUBS_FILE} for results.')
