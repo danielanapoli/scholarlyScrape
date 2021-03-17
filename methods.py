@@ -14,7 +14,7 @@ def genTag(authors, year, title):
 def saveQuery(search_query, file):
     n = 0
     pub = (next(search_query))
-    with open(file, 'w') as pubsFile:
+    with open(file, 'w', encoding='utf-8') as pubsFile:
         w = csv.writer(pubsFile)
         w.writerow(["Tag", "Author", "Year", "Title", "URL", "Excerpt"])
         while(next(search_query)):
@@ -30,23 +30,22 @@ def handlePDF(file):
     n = 0
     pubs = pandas.read_csv(file)
     for tag in pubs.Tag:
-        n += extractPDFData(tag)
+        n += extractData(tag)
     print(f'Extracted and appended data from {n} PDFs.')
 
 # extract first page (or first 4000 chars) from a PDF file        
-def extractPDFData(file):
+def extractData(file):
     pageNum = 0
     pdfObj = open(DIR_PATH + '/' + file + '.pdf', 'rb')
     reader = PyPDF2.PdfFileReader(pdfObj)
     extractedFromPDF = (reader.getPage(pageNum).extractText())
     while (len(extractedFromPDF) < 4000):
-        # check that you're not trying to retrieve data beyond the last page 
-        if (pageNum == reader.getNumPages()-1):
+        if (pageNum == reader.getNumPages()-1): #avoid retrieving data beyond the last page
             break
         pageNum += 1
         extractedFromPDF += (' ' + reader.getPage(pageNum).extractText())
-    updatePubs(extractedFromPDF, file)
-    return 1
+        updatePubs(extractedFromPDF, file)
+        return 1
 
 # append extracted data to corresponding publication rows based on tag; overwrite .csv file with updated dataframe 
 def updatePubs(excerpt, tag):
