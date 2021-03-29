@@ -8,8 +8,6 @@ from nordvpn_switcher import initialize_VPN, rotate_VPN, terminate_VPN
 # set up VPN
 initialize_VPN(save=1, area_input=['complete rotation'])
 
-print('Scraping search queries...')
-
 # rotate ip when needed
 for i in range(3):
     rotate_VPN()

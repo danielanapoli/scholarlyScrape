@@ -3,6 +3,7 @@ import csv
 import os
 import PyPDF2
 import pandas
+import time
 
 from scholarly import scholarly
 from constants import *
@@ -13,6 +14,7 @@ def genTag(authors, year, title):
 
 # create a .csv file containing selected data from google scholar queries 
 def saveQuery(search_query, file):
+    print('Scraping search queries...')
     n = 0
     pub = (next(search_query))
     with open(file, 'w', encoding='utf-8') as pubsFile:
@@ -24,12 +26,16 @@ def saveQuery(search_query, file):
                         pub["bib"]["author"], pub["bib"]["pub_year"], pub["bib"]["title"], pub["bib"]["venue"], #Data in bib object
                         pub["pub_url"], pub["gsrank"], pub["num_citations"], #Data not in bib object
                         'N/A']) #Placeholder for excerpt that will be populated after running PDFscrape.py
+            time.sleep(2) #Buffer time before next call so we can get more entries
             pub = (next(search_query))
+            if (n == 500):
+                break
         print(f'Saved data from {n} scraped publications on Google scholar.')
     pubsFile.close()
 
 # pass each tag identifier from the .csv to the extraction function
 def handlePDF(file):
+    print('Scraping article data...')
     n = 0
     pubs = pandas.read_csv(file)
     for tag in pubs.Tag:
