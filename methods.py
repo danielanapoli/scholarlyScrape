@@ -13,7 +13,7 @@ from constants import *
 def genTag(authors, year, title):
     u = uuid.uuid1()
     u = str(u)
-    return(year + authors[0][0] + title[0] + u[0:6]) 
+    return(year + authors[0][0] + title[0] + '_' + u[0:6]) 
 
 # create a .csv file containing selected data from google scholar queries 
 def saveQuery(search_query, file):
