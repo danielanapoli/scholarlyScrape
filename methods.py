@@ -4,13 +4,16 @@ import os
 import PyPDF2
 import pandas
 import time
+import uuid
 
 from scholarly import scholarly
 from constants import *
 
-# generate a tag per publication containing name of first author + year + first 10 chars of title
+# generate a tag per publication based on some portion of the query metadata + first portion of a randomly generated UUID
 def genTag(authors, year, title):
-    return(year + '_' + authors[0].replace(' ', '') + '_' + title[0:9].replace(' ', '')) 
+    u = uuid.uuid1()
+    u = str(u)
+    return(year + authors[0][0] + title[0] + u[0:6]) 
 
 # create a .csv file containing selected data from google scholar queries 
 def saveQuery(search_query, file):
@@ -39,7 +42,8 @@ def handlePDF(file):
     n = 0
     pubs = pandas.read_csv(file)
     for tag in pubs.Tag:
-        n += extractData(tag)
+        #n += 
+        extractData(tag)
     print(f'Extracted and appended data from {n} PDFs.')
 
 # extract first page (or first 4000 chars) from a PDF file   
@@ -51,7 +55,7 @@ def extractData(file):
     extractedFromPDF = (reader.getPage(pageNum).extractText())
     while (len(extractedFromPDF) < 4000):
         if (pageNum == reader.getNumPages()-1): #avoid retrieving data beyond the last page
-            break
+            return 0
         pageNum += 1
         extractedFromPDF += (' ' + reader.getPage(pageNum).extractText())
         updatePubs(extractedFromPDF, file)
