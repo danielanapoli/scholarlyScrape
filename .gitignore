@@ -2,4 +2,3 @@
 *.txt
 ignore/
 scraped_data/*.csv
-pdf_data/*.pdf
