@@ -1,6 +1,8 @@
 # scholarlyScrape
 TO RUN:
 
+0. Update SEARCH_QUERY in constants.py with your desired key words.
+
 1. Collect publication data: `python .\scholarlyScrape.py`
 
 2. Download PDF files. Be sure to name files with corresponding Tags. [Done manually]
