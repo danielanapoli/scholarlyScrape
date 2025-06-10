@@ -7,4 +7,4 @@ TO RUN:
 
 3. Collect PDF excerpts: `python .\pdfScrape.py`
 
-*Note: Before running, create an empty `\scraped_data` and `\pdf_data` directory in the same directory as scholarlyScrape.py.*
+*Note: The `\scraped_data` and `\pdf_data` directories start populated with sample data. They will be wiped each time you run.*
